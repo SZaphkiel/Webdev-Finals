@@ -3,21 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Userpage.css">
+    <title>Login and Sign Up Form</title>
+    <link rel="stylesheet" href="./Userpage.css">
+    <link rel="stylesheet" href="./repeatablePatters.css">
 </head>
 <body>
     <header class="header">
         <div class="headerContainer">
             <div class="headerWrapper">
                 <div class="headerLogo">
-                    <a href="Homepage.html"><img src="./mainResources/Logo.png" alt="MainHome"></a>
+                    <a href=""><img src="./mainResources/Logo1.png" alt="MainHome"></a>
+                </div>
+                <div class="headerList">
+                    <ul>
+                        <li><a href="">Deals</a></li>
+                        <li><a href="">Best Sellers</a></li>
+                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="">Category</a></li>
+                    </ul>
                 </div>
                 <div class="headerUser" style="filter: invert(1);">
                     <ul>
                         <li><a href=""><img src="./subImages/search.png" alt=""></a></li>
-                        <li><a href=""><img src="./subImages/user.png" alt=""></a></li>
+                        <li><a href="Userpage.html"><img src="./subImages/user.png" alt=""></a></li>
                         <li><a href=""><img src="./subImages/shopping-cart.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="categoryDropDown" style="display: none;">
+            <div class="dropContainer">
+                <div class="dropWrapper">
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -26,14 +48,26 @@
     <div class="User">
         <div class="userContainer">
             <div class="userWrapper">
-                <div class="userCard">
-                    <form action="">
-                        <label for="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
+                <div class="userCard" id="form-container">
+                    <form id="login-form">
+                        <h2>Login</h2>
+                        <label for="login-username">Username:</label>
+                        <input type="text" id="login-username" name="username" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" required>
                         <input type="submit" value="Login">
-                        <p>Don't have an account? <a href="#">Sign Up</a></p>
+                        <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                    </form>
+                    <form id="signup-form" class="hidden">
+                        <h2>Sign Up</h2>
+                        <label for="signup-username">Username:</label>
+                        <input type="text" id="signup-username" name="username" required>
+                        <label for="signup-password">Password:</label>
+                        <input type="password" id="signup-password" name="password" required>
+                        <label for="signup-email">Email:</label>
+                        <input type="email" id="signup-email" name="email" required>
+                        <input type="submit" value="Sign Up">
+                        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
                     </form>
                 </div>
             </div>
@@ -53,21 +87,19 @@
                 <div class="about">
                     <p>About Us</p>
                     <ul>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="Whyus.html">Why us?</a></li>
                         <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Our Policy</a></li>
                         <li><a href="">Be a Partner</a></li>
-                        <li><a href="">Media Contact</a></li>
                     </ul>
                 </div>
                 <div class="costumerService">
                     <p>Get Support</p>
                     <ul>
                         <li><a href="">Return and Refund</a></li>
-                        <li><a href="">Help Centre</a></li>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">Order Tracking</a></li>
                         <li><a href="">Payment</a></li>
+                        <li><a href="">Frequently Asked Questions</a></li>
                     </ul>
                 </div>
             </div>
@@ -77,5 +109,6 @@
         </div>
         <div class=""></div>
     </footer>
+    <script src="userPage.js"></script>
 </body>
 </html>
