@@ -124,6 +124,132 @@ a{
 }
 
 
+/* Box-sizing border-box reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Margin and padding reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* Typography reset */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Reset anchor text decoration */
+a {
+  text-decoration: none;
+}
+
+/* Set default cursor for links */
+a:hover {
+  cursor: pointer;
+}
+
+/* removes all text decoration */
+a{
+    text-decoration: none;
+}
+
+
 /* Header */
 .header {
     background-color: #1c398d;
@@ -138,23 +264,20 @@ a{
     align-items: center;
     justify-content: space-between;
     margin: 0 100px;
+    position: relative;
 }
 
 .headerList ul {
     display: flex;
+    position:absolute;
     align-items: center;
     gap: 40px;
     flex-direction: row;
     list-style: none;
+    right: 500px;
+    bottom: 10px;
 }
 
-.headerUser ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-}
 
 .headerList ul li a {
     color: white;
@@ -165,88 +288,4 @@ a{
 
 .headerList ul li a:hover{
     border-bottom: 2px solid #fff;
-}
-
-
-.User {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-}
-
-.userContainer {
-    max-width: 600px;
-}
-
-.userWrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.userCard {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    max-width: 300px;
-}
-
-.userCard h2 {
-    margin-top: 0;
-}
-
-.userCard input[type="text"], input[type="password"], input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.userCard input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-.userCard input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-.footer ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-}
-.footerItems p{
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-.footer ul li a{
-    color: #000;
-    font-size: 18px;
-}
-.footer .footerContainer{
-    background-color: #e3e3e3;
-    height: 400px;
-}
-.footer .footerContainer .footerItems{
-    padding: 50px 0;
-    display: flex;
-    flex: row;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1px dotted black;
-}
-.footer .copyright{
-    margin: 10px;
-    text-indent: 100px;
 }

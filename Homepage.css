@@ -118,18 +118,13 @@ a:hover {
   cursor: pointer;
 }
 
-
-/* removes all text decoration */
 body{
     height: 2000px;
-}
-a{
-    text-decoration: none;
 }
 
 /* Header */
 .header {
-    background-color: #1c398d;
+    background-color:#1c398d;
     height: 90px;
     position: sticky;
     top: 0;
@@ -175,10 +170,13 @@ a{
 .scrolling-text-container {
     width: 100%;
     overflow: hidden;
+    background-color: #1c398d;
   }
   
   .scrolling-text {
     white-space: nowrap;
+    color: #fff;
+    padding: 5px;
     animation: scrolling-text 20s linear infinite;
   }
   
@@ -199,7 +197,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 700px;
     margin: 0;
     overflow: hidden;
 }
@@ -238,6 +236,7 @@ a{
 /* Best sellers */
 
 .bestSeller .bestContainer{
+    padding-top: 25px;
     background-color:#e3e3e3
 }
 .bestSeller .bestContainer .bestCards{
@@ -344,7 +343,7 @@ a{
 /* Footer */
 .footer .footerContainer{
     background-color: #e3e3e3;
-    height: 50vh;
+    height: 500px;
 }
 .footerItems{
     padding: 50px 0;
@@ -372,7 +371,9 @@ a{
     color: #000;
     font-size: 18px;
 }
-
+.footer ul li a:hover{
+    color: white;
+}
 .footer .copyright{
     margin: 10px;
     text-indent: 100px;

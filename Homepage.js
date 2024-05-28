@@ -7,6 +7,7 @@ const loopImgArray = [
 
 const imageElement = document.getElementById('loopingImages');
 let currentIndex = 0;
+
 function imageLooping() {
     imageElement.classList.add('hidden');
     
