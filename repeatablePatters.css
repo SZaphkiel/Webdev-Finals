@@ -125,7 +125,6 @@ a:hover {
     top: 0;
     z-index: 1000; 
 }
-
 /* Header items */
 .header .headerContainer .headerWrapper {
     padding-top: 30px;
@@ -179,11 +178,24 @@ a:hover {
     width: 100%;
 }
 
+.header-helpWrapper{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0 100px;
+    text-align: left;
+}
 
 /* Footer */
+.footerHelp{
+    height: 100px;
+    
+}
 .footer .footerContainer{
     background-color: #e3e3e3;
-    height: 500px;
+    height: 400px;
 }
 .footerItems{
     padding: 50px 0;

@@ -13,7 +13,8 @@ body {
 
 .userContainer {
   max-width: 600px;
-  height: 700px;
+  height: 600px;
+  padding-top: 150px;
 }
 
 .userWrapper {

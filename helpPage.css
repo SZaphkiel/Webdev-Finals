@@ -1,3 +1,6 @@
+body{
+    max-height:800px;
+}
 .helpContainer{
     padding: 50px;
 }
@@ -5,14 +8,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+    
     justify-content: center;
     gap: 30px;
 }
 .helpCard{
+    display: flex;
+    flex-direction: column;
     border: 1px solid gray;
-    padding: 10px;
-    width: 400px;
+    padding: 25px;
+    width: 350px;
     height: 200px;
+    gap: 10px;
+}
+.helpTexts {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.helpClick a{
+    color: #1c398d;
 }
 @media screen and (max-width: 700px) {
     .helpContainer{

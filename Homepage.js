@@ -22,6 +22,8 @@ imageLooping();
 
 setInterval(imageLooping, 4000);
 
+// IMAGE LOOPING DOTS
+
 const dotsContainer = document.getElementById('dotsContainer');
 
 for (let i = 0; i < loopImgArray.length; i++) {
@@ -48,6 +50,9 @@ function updateActiveDot() {
     dots.forEach(dot => dot.classList.remove('active'));
     dots[currentIndex].classList.add('active');
 }
+
+
+// CHATABOT 
 
 document.addEventListener('DOMContentLoaded', function() {
     let chatbotButton = document.getElementById('chatbotButton');
@@ -130,8 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-
 
 
 
