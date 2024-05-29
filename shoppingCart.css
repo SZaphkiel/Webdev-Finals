@@ -1,0 +1,13 @@
+.cartWarpper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+button {
+    background-color: #1c398d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

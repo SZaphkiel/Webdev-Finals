@@ -215,7 +215,7 @@ a:hover {
 }
 
 .footer ul li a:hover {
-    color: white; 
+    color: #1c398d; 
 }
 
 .footer ul li a::after {
@@ -236,4 +236,11 @@ a:hover {
 .footer .copyright{
     margin: 10px;
     text-indent: 100px;
+}
+
+/* Help centre */
+.headerTitle {
+    font-weight: 500;
+    color: white;
+    
 }

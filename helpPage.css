@@ -1,0 +1,29 @@
+.helpContainer{
+    padding: 50px;
+}
+.helpWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.helpCard{
+    border: 1px solid gray;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
+}
+@media screen and (max-width: 700px) {
+    .helpContainer{
+        padding: 50px;
+    }
+    .helpWrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .helpCard{
+        padding: 10px;
+        width: 300px;
+        height: 200px;
+    }
+}

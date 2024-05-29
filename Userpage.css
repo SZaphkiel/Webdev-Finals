@@ -1,16 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   background-color: #f0f0f0;
 }
 
-.header, .footer {
-  width: 100%;
-}
 
 .User {
   display: flex;
@@ -21,10 +13,12 @@ body {
 
 .userContainer {
   max-width: 600px;
+  height: 700px;
 }
 
 .userWrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -57,7 +51,7 @@ body {
 }
 
 .userCard input[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #1c398d;
   color: white;
   border: none;
   cursor: pointer;
@@ -65,7 +59,7 @@ body {
 }
 
 .userCard input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #1c398d;
 }
 
 .hidden {

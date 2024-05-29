@@ -1,0 +1,28 @@
+.whyContainer{
+    padding: 0 50px;
+}
+.whyWrapper{
+    display: flex;
+    flex-direction: column;
+}
+.whyCard {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* edit this */
+}
+.cardText{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.cardTitle {
+    text-align: center;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+

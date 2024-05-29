@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping</title>
+    <title>Caitlin Clarke</title>
     <link rel="stylesheet" href="repeatablePatters.css">
     <link rel="stylesheet" href="./homePage.css">
 </head>
@@ -63,11 +63,38 @@
     <div class="bestSeller">
         <div class="bestContainer">
             <div class="bestCards">
-                <h2>Best Sellers</h2>
+                <div class="bestTexts">
+                    <h2>Best Sellers</h2>
+                    <a href="" class="seeAll">See All</a>
+                </div>
                     <div class="cardsContainer">
                         <div class="sellerCards">
                             <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
+                                <img src="./productImages/Women Shoes/Anime Shoes.jpeg" alt="productimage">
+                                <div class="sellerButton">
+                                    <input type="button" name="" id="" value="Add to Cart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sellerCards">
+                            <div class="sellerImage">
+                                <img src="./productImages/Women Shoes/Floral.jpeg" alt="productimage">
+                                <div class="sellerButton">
+                                    <input type="button" name="" id="" value="Add to Cart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sellerCards">
+                            <div class="sellerImage">
+                                <img src="./productImages/Boy shoes/BlueShoes1.jpeg" alt="productimage">
+                                <div class="sellerButton">
+                                    <input type="button" name="" id="" value="Add to Cart">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sellerCards">
+                            <div class="sellerImage">
+                                <img src="./productImages//Slipper/nursingclogside.jpeg" alt="productimage">
                                 <div class="sellerButton">
                                     <input type="button" name="" id="" value="Add to Cart">
                                 </div>
@@ -83,7 +110,7 @@
                         </div>
                         <div class="sellerCards">
                             <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
+                                <img src="./productImages/Boy shoes/hightopblack&whitesideview.jpeg" alt="productimage">
                                 <div class="sellerButton">
                                     <input type="button" name="" id="" value="Add to Cart">
                                 </div>
@@ -91,7 +118,7 @@
                         </div>
                         <div class="sellerCards">
                             <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
+                                <img src="./productImages/Slipper/Hakyuu.jpeg" alt="productimage">
                                 <div class="sellerButton">
                                     <input type="button" name="" id="" value="Add to Cart">
                                 </div>
@@ -99,7 +126,7 @@
                         </div>
                         <div class="sellerCards">
                             <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
+                                <img src="./productImages/Slipper/slipperwhite&black.jpeg" alt="productimage">
                                 <div class="sellerButton">
                                     <input type="button" name="" id="" value="Add to Cart">
                                 </div>
@@ -107,31 +134,7 @@
                         </div>
                         <div class="sellerCards">
                             <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
-                                <div class="sellerButton">
-                                    <input type="button" name="" id="" value="Add to Cart">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sellerCards">
-                            <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
-                                <div class="sellerButton">
-                                    <input type="button" name="" id="" value="Add to Cart">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sellerCards">
-                            <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
-                                <div class="sellerButton">
-                                    <input type="button" name="" id="" value="Add to Cart">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sellerCards">
-                            <div class="sellerImage">
-                                <img src="./productImages/ogBlack.png" alt="productimage">
+                                <img src="./productImages/Boy shoes/Blackshoessideways.jpeg" alt="productimage">
                                 <div class="sellerButton">
                                     <input type="button" name="" id="" value="Add to Cart">
                                 </div>
@@ -157,6 +160,28 @@
             </div>
         </div>
     </div>
+    <div class="chatbotContainer">
+        <div class="chatbotButton" id="chatbotButton">
+            <img src="./subImages/chat.png" alt="Chatbot" />
+        </div>
+        <div class="chatbotPopup" id="chatbotPopup">
+            <div class="chatbot-header">
+                <h2>Chat with us</h2>
+                <span class="closeButton" id="closeButton">&times;</span>
+            </div>
+            <div class="chatbotContent" id="chatContent">
+                <div class="message bot">How can we assist you today?<br>
+                    <button class="choice" data-action="track_order">Track my order</button>
+                    <button class="choice" data-action="return_refund">Return and refund</button>
+                    <button class="choice" data-action="cancellation_concern">Cancellation Concern</button>
+                </div>
+            </div>
+            <div class="chatInput">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="footerContainer">
             <div class="footerItems">
@@ -171,7 +196,7 @@
                 <div class="about">
                     <p>About Us</p>
                     <ul>
-                        <li><a href="Whyus.html">Why us?</a></li>
+                        <li><a href="">Why us?</a></li>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Be a Partner</a></li>
                     </ul>
@@ -179,11 +204,11 @@
                 <div class="costumerService">
                     <p>Get Support</p>
                     <ul>
-                        <li><a href="">Return and Refund</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Order Tracking</a></li>
-                        <li><a href="">Payment</a></li>
-                        <li><a href="">Frequently Asked Questions</a></li>
+                        <li><a href="helpPage.html">Return and Refund</a></li>
+                        <li><a href="helpPage.html">Contact Us</a></li>
+                        <li><a href="helpPage.html">Order Tracking</a></li>
+                        <li><a href="helpPage.html">Payment</a></li>
+                        <li><a href="helpPage.html">Frequently Asked Questions</a></li>
                     </ul>
                 </div>
             </div>
@@ -194,6 +219,5 @@
         <div class=""></div>
     </footer>
 <script src="homePage.js"></script>
-    
 </body>
 </html>
