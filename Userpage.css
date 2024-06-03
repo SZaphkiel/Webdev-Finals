@@ -72,9 +72,9 @@ body {
 }
 
 #form-container.signup .userCard {
-  height: 380px; /* Adjust height for the signup form */
+  height: 380px; 
 }
 
 #form-container .userCard {
-  height: 320px; /* Adjust height as needed for the transition */
+  height: 320px; 
 }
