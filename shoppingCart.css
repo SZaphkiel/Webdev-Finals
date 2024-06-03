@@ -1,13 +1,22 @@
+.cartContainer{
+    max-height: fit-content;
+    height: 100vh;
+}
 .cartWarpper{
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
-button {
+.cartFooter{
+    color: #fff;
     background-color: #1c398d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 50px;
+    position: sticky;
+    bottom: 0;
+    z-index: 3000px;
 }

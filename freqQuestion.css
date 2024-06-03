@@ -5,10 +5,12 @@
     align-items: center;
     justify-content: center;
 }
+
 .qWrapper h2 {
     padding: 40px 0 0 0;
     font-weight: 400;
 }
+
 .qCards {
     margin-top: 20px;
     display: flex;
@@ -19,18 +21,25 @@
     background-color: #e3e3e3;
     border: 1px solid #000;
     cursor: pointer;
+    position: relative;
 }
+
 .qNa {
     display: none;
 }
+
 .qArrow {
     transition: transform 0.3s ease;
-    transform-origin: center; 
+    transform-origin: center;
+    position: absolute;
+    right: 20px;
 }
+
 .qArrow.rotated {
-    transform: rotate(180deg);
-    transition: transform 0.3s ease; /
+    transform: rotate(180deg) translateY(-50%);
+    transition: transform 0.3s ease;
 }
+
 .qNa.show {
     display: block;
 }
