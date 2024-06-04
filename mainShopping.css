@@ -1,0 +1,72 @@
+.itemContainer{
+    min-height: 100vh;
+}
+.itemWrapper{
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+.leftWrapper{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    left: 150px;
+    top: 300px;
+    gap:30px;
+}
+.leftWrapper ul li{
+    margin: 10px;
+}
+.rightWrapper{
+    padding-left: 100px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 150px;
+    gap: 25px;
+}
+.shoeCard img{
+    width: 200px;
+    height: 200px;
+}
+.shoeCard{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.shoeCard button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: #1c398d;
+    transition: 0.5s ease;
+}
+.shoeCard button:hover{
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #1c398d;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+.cardText{
+    padding-top: 20px;
+    border-top: 1px solid #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px   ;
+}

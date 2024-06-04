@@ -1,0 +1,15 @@
+body{
+    height: 120vh;
+}
+.termsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.termsWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 20px;
+}

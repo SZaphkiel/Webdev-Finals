@@ -5,6 +5,7 @@
 .cartContainer{
     max-height: fit-content;
     height: 100vh;
+    padding: 50px;
 }
 .cartWrapper{
     display: flex;
@@ -14,13 +15,40 @@
 }
 .cartCard{
     display: flex;
-    align-items: center;
-    border: 1px solid #000;
+    flex-direction: row;
+    width: 700px;
     padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    width: 650px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
+.cartImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cardText{
+    display: flex;
+    flex-direction: row;
+}
+.cartWrapper .cartFloating{
+    position: absolute;
+    top: 400px;
+}
+.itemQuantity {
+    display: flex;
+    align-items: center;
+}
+.itemQuantity button {
+    width: 30px;
+    height: 30px;
+}
+.itemQuantity input {
+    width: 40px;
+    text-align: center;
+}
 .cartFooter{
     color: #fff;
     background-color: #1c398d;

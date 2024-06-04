@@ -1,0 +1,102 @@
+h2 {
+    text-align: center;
+    color: #333;
+}
+.inputGroup {
+    margin-bottom: 15px;
+}
+.inputGroup label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.inputGroup input, .inputGroup select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.inputGroup select {
+    appearance: none;
+}
+/* Name Inputs */
+.nameInputs{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.nameInputs .inputGroup{
+    width: 410px;
+}
+.nameInputs .inputGroup:nth-child(2){
+    width: 50px
+}
+.contactInfo{
+    display: flex;
+    flex-direction: row;   
+    gap: 20px;
+}
+.contactInfo .inputGroup:first-child{
+    width: 480px;
+}
+.contactInfo .inputGroup:last-child{
+    width: 300px;
+}
+.addressInfo{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.addressInfo .inputGroup:first-child{
+    width:300px 
+}
+.addressInfo .inputGroup:nth-child(2){
+    width: 250px;
+}
+.addressInfo .inputGroup:last-child{
+    width: 150px;
+}
+
+/* Card info */
+
+.inputGroup .expirationDate {
+    display: flex;
+    justify-content: space-between;
+}
+.inputGroup .expirationDate input {
+    width: 48%;
+}
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1c398d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #2247b4;
+}
+.paymentMethod {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.paymentMethod label {
+    display: flex;
+    align-items: center;
+}
+.paymentMethod input {
+    margin-right: 10px;
+}        
+.buyContainer {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,22 @@
+
+.partnerWrapper{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    gap: 20px;
+    text-align: center;
+}
+.content h2{
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.content h1, h2, h3 {
+    color: #333;
+}

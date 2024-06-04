@@ -30,14 +30,7 @@
 .whyCard:nth-child(even){
     background-color: #e3e3e3;;
 }
-/* .cardText{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.cardText{
+    width: 700px;
 }
-.cardTitle {
-    text-align: center;
-    display: flex;
-    font-size: small;
-} */
 

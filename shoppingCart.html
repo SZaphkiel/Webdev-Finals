@@ -49,12 +49,16 @@
         <form action="">
         <div class="cartContainer">
             <div class="cartWrapper">
-                <h4>Cart is empty!</h4>
+                <div class="cartFloating">
+                    <h4>Cart is empty!</h4>
+                    <p></p>
+                </div>
                 <div class="cartCard">     
-                    <input type="checkbox" name="" id="">
-                     <img src="./productImages/Boy shoes/BatketBallShoes1.jpeg" alt="">
-                     <div class="cartText">
-                        <h2>Shush</h2>
+                    <div class="cardImage">
+                        <input type="checkbox" name="" id="">
+                        <img src="./productImages/Boy shoes/BatketBallShoes1.jpeg" alt="">
+                        <h4>Shush</h4>
+                    </div>
                         <label for="size">Size:</label>
                         <select id="size" name="size">
                             <option value="6">6</option>
@@ -71,16 +75,20 @@
                             <option value="11.5">11.5</option>
                             <option value="12">12</option>
                         </select>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                        <div class="itemQuantity">
+                            Quantity: 
+                            <button class="minusButton">-</button>
+                            <input type="text" id="quantityInput" value="1" readonly />
+                            <button class="plusButton">+</button>
+                        </div>
                         <button type="button">Remove from Cart</button>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="cartFooter">
             <p id="subTotal">Sub-Total: &#8369;0.00</p> 
-            <input type="submit" name="" id="" value="Checkout">
+            <input type="button" name="" id="" value="Checkout" onclick="document.location.href='purchasePage.html'">
         </div>
         </form>
     </section>
@@ -120,5 +128,26 @@
         </div>
         <div class=""></div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const minusButton = document.querySelector('.minusButton');
+            const plusButton = document.querySelector('.plusButton');
+            const quantityInput = document.getElementById('quantityInput');
+
+            minusButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                let quantity = parseInt(quantityInput.value);
+                if (quantity > 1) {
+                    quantityInput.value = quantity - 1;
+                }
+            });
+
+            plusButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                let quantity = parseInt(quantityInput.value);
+                quantityInput.value = quantity + 1;
+            });
+        });
+    </script>
 </body>
 </html>

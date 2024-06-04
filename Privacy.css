@@ -1,0 +1,13 @@
+.policyContainer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.section {
+    margin-bottom: 20px;
+}
+.policyWrapper{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
