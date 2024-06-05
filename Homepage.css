@@ -190,27 +190,21 @@ body{
     background-color: #555;
 }
 /* Best sellers */
-
-.bestSeller .bestContainer{
+.bestSeller .bestContainer {
     padding-top: 25px;
-    background-color:#e3e3e3
+    background-color: #e3e3e3;
 }
-.bestSeller .bestContainer .bestCards{
+.bestSeller .bestContainer .bestCards {
     display: flex;
     flex-direction: column;
 }
-.bestSeller .bestContainer .bestCards .cardsContainer{
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-}
-.bestTexts{
+.bestTexts {
     display: flex;
     justify-content: space-between;
     color: #000;
     margin: 0 100px;
 }
-.bestCards a{
+.bestCards a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +215,7 @@ body{
     background-color: #1c398d;
     transition: 0.5s ease;
 }
-.bestCards a:hover{
+.bestCards a:hover {
     color: #fff;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -231,25 +225,40 @@ body{
     transform: scale(1.05);
     transition: 0.5s ease;
 }
-.bestCards h2{
+.bestCards h2 {
     color: #000;
     font-weight: 400;
     font-size: 32px;
 }
-.sellerCards{
-    margin: 20px;
-    transition: transform 0.2s
-    
+.cardsWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;    
+    padding: 0 100px;
 }
-.sellerCards:hover{
+.cardsContainer {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    flex-grow: 1;
+}
+.sellerCards {
+    margin: 20px;
+    transition: transform 0.2s;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
+.sellerCards:hover {
     transform: translateY(-5px);
 }
-.sellerCards img{
+.sellerCards img {
     height: auto;
     width: 250px;
+    border: 1px solid #ddd;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.sellerImage{
+.sellerImage {
     position: relative;
 }
 .sellerImage .sellerButton {
@@ -258,7 +267,7 @@ body{
     left: 80px;
     display: none;
 }
-.sellerImage .sellerButton input[type="button"]{
+.sellerImage .sellerButton input[type="button"] {
     width: 100px;
     height: 40px;
     border: 1px solid transparent;
@@ -266,11 +275,31 @@ body{
     background-color: #1c398d;
     color: #fff;
 }
-
 .sellerImage:hover .sellerButton {
     display: block;
     transition: 0.5s ease;
 }
+button.prev, button.next {
+    background-color: #1c398d;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+button.prev {
+    left: 50px;
+}
+button.next {
+    right: 50px;
+}
+button.prev:hover, button.next:hover {
+    background-color: #333;
+}
+
 /* Membership */
 .Membership .membershipContainer{
     background-color: #fff;
@@ -320,7 +349,9 @@ body{
 .memberImage img{
     height: auto;
     width: 1000px;
+    border: 1px solid #ddd;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Chat Bot */
@@ -390,12 +421,20 @@ body{
 }
 
 .message {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 10px;
     max-width: 70%;
 }
-
+.choice{
+    margin: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #0e5cb0;
+    padding: 10px;
+}
 .user {
     background-color: #007bff;
     color: #fff;

@@ -51,6 +51,22 @@ function updateActiveDot() {
     dots[currentIndex].classList.add('active');
 }
 
+// Best seller
+document.querySelector('.prev').addEventListener('click', function() {
+    document.querySelector('.cardsContainer').scrollBy({
+        top: 0,
+        left: -300, 
+        behavior: 'smooth'
+    });
+});
+
+document.querySelector('.next').addEventListener('click', function() {
+    document.querySelector('.cardsContainer').scrollBy({
+        top: 0,
+        left: 300, 
+        behavior: 'smooth'
+    });
+});
 
 // CHATABOT 
 
@@ -142,6 +158,7 @@ document.getElementById('bestSellersLink').addEventListener('click', function(ev
     document.getElementById('bestSellers').scrollIntoView({ behavior: 'smooth' });
 });
 // header searchBar
+const searchText = document.getElementById('')
 
 
 

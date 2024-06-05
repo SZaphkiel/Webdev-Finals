@@ -1,87 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
 .itemContainer {
     min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .itemWrapper {
     display: flex;
-    gap: 4px;
-    justify-content: center;
+    gap: 20px;
 }
 
 .leftWrapper {
     display: flex;
-    position: fixed;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 40px;
+    max-height: 300px;
     overflow-y: auto;
-    left: 150px;
-    top: 300px;
-    gap: 30px;
+}
+
+.leftWrapper h4 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.leftWrapper ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .leftWrapper ul li {
-    margin: 10px;
+    margin: 10px 0;
+}
+
+.leftWrapper ul li a {
+    text-decoration: none;
+    color: #1c398d;
+    font-size: 1em;
 }
 
 .rightWrapper {
     display: grid;
-    grid-template-columns: repeat(5, minmax(180px, 1fr));
-    align-items: start;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
 }
 
-.shoeCardWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .shoeCard {
-    width: 100%;
-    max-width: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.shoeCard img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-.shoeCard button {
-    margin-top: auto;
-    width: 100%;
-}
-
-.shoeCard button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 40px;
-    color: #fff;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    background-color: #1c398d;
-    transition: transform 0.5s ease, background-color 0.5s ease;
-}
-
-.shoeCard button:hover {
-    cursor: pointer;
+.shoeCard:hover {
     transform: scale(1.05);
 }
 
+.cardImg img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .cardText {
-    padding-top: 20px;
-    border-top: 1px solid #000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.shoeName {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.shoePrice {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.cardBtn {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    background-color: #1c398d;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cardBtn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #162d6d;
 }
