@@ -1,72 +1,87 @@
-.itemContainer{
+.itemContainer {
     min-height: 100vh;
 }
-.itemWrapper{
+
+.itemWrapper {
     display: flex;
     gap: 4px;
     justify-content: center;
 }
-.leftWrapper{
+
+.leftWrapper {
     display: flex;
     position: fixed;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
+    overflow-y: auto;
     left: 150px;
     top: 300px;
-    gap:30px;
+    gap: 30px;
 }
-.leftWrapper ul li{
+
+.leftWrapper ul li {
     margin: 10px;
 }
-.rightWrapper{
-    padding-left: 100px;
+
+.rightWrapper {
     display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding-top: 150px;
-    gap: 25px;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
 }
-.shoeCard img{
-    width: 200px;
-    height: 200px;
-}
-.shoeCard{
-    display: flex;
+
+.shoeCardWrapper {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.shoeCard {
+    width: 100%;
+    max-width: 200px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.shoeCard button{
+
+.shoeCard img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.shoeCard button {
+    margin-top: auto;
+    width: 100%;
+}
+
+.shoeCard button {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    height: 40px;
     width: 100px;
-    background-color: #1c398d;
-    transition: 0.5s ease;
-}
-.shoeCard button:hover{
+    height: 40px;
     color: #fff;
     border: 1px solid transparent;
     border-radius: 20px;
     background-color: #1c398d;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.shoeCard button:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: 0.5s ease;
 }
-.cardText{
+
+.cardText {
     padding-top: 20px;
     border-top: 1px solid #000;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px   ;
+    gap: 20px;
 }

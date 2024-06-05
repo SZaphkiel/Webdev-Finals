@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('show-signup').addEventListener('click', function(e) {
+    document.getElementById('showSignup').addEventListener('click', function(e) {
         e.preventDefault();
-        document.getElementById('login-form').classList.add('hidden');
-        document.getElementById('signup-form').classList.remove('hidden');
-        document.getElementById('form-container').classList.add('signup');
+        document.getElementById('loginForm').classList.add('hidden');
+        document.getElementById('signupForm').classList.remove('hidden');
+        document.getElementById('formContainer').classList.add('signup');
     });
 
-    document.getElementById('show-login').addEventListener('click', function(e) {
+    document.getElementById('showLogin').addEventListener('click', function(e) {
         e.preventDefault();
-        document.getElementById('signup-form').classList.add('hidden');
-        document.getElementById('login-form').classList.remove('hidden');
-        document.getElementById('form-container').classList.remove('signup');
+        document.getElementById('signupForm').classList.add('hidden');
+        document.getElementById('loginForm').classList.remove('hidden');
+        document.getElementById('formContainer').classList.remove('signup');
     });
 });

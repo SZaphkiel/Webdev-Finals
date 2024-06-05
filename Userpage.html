@@ -4,71 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Sign Up Form</title>
-    <link rel="stylesheet" href="./Userpage.css">
     <link rel="stylesheet" href="./repeatablePatters.css">
+    <link rel="stylesheet" href="./Userpage.css">
 </head>
 <body>
     <header class="header">
         <div class="headerContainer">
             <div class="headerWrapper">
-                <div class="headerLogo">
+                <div class="headerLogo">    
                     <a href="Homepage.html"><img src="./mainResources/Logo1.png" alt="MainHome"></a>
                 </div>
                 <div class="headerList">
                     <ul>
-                        <li><a href="">Deals</a></li>
-                        <li><a href="">Best Sellers</a></li>
-                        <li><a href="">New Arrivals</a></li>
-                        <li><a href="">Category</a></li>
+                        <li><a href="mainShopping.html">Deals</a></li>
+                        <li><a href="#" id="bestSellersLink">Best Sellers</a></li>
+                        <li><a href="mainShopping.html">New Arrivals</a></li>
+                        <li class="categoryMenu">
+                            <a href="">Category</a>
+                            <div class="categoryDropDown">
+                                <div class="dropContainer">
+                                    <div class="dropWrapper">
+                                        <ul>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Sandals</a></li>
+                                            <li><a href="">Slippers</a></li>
+                                            <li><a href="">Boots</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="headerUser" style="filter: invert(1);">
+                <div class="headerUser">
                     <ul>
-                        <li><a href=""><img src="./subImages/search.png" alt=""></a></li>
+                        <li><input type="search" name="" id="searchBar" placeholder="Looking for something?"></li>
                         <li><a href="Userpage.html"><img src="./subImages/user.png" alt=""></a></li>
-                        <li><a href=""><img src="./subImages/shopping-cart.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="categoryDropDown" style="display: none;">
-            <div class="dropContainer">
-                <div class="dropWrapper">
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="shoppingCart.html"><img src="./subImages/shopping-cart.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <div class="User">
+    <div class="user">
         <div class="userContainer">
             <div class="userWrapper">
-                <div class="userCard" id="form-container">
-                    <form id="login-form">
+                <div class="userCard" id="formContainer">
+                    <form id="loginForm">
                         <h2>Login</h2>
-                        <label for="login-username">Username:</label>
-                        <input type="text" id="login-username" name="username" required>
-                        <label for="login-password">Password:</label>
-                        <input type="password" id="login-password" name="password" required>
+                        <label for="loginUsername">Username:</label>
+                        <input type="text" id="loginUsername" name="username" required>
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" name="password" required>
                         <input type="submit" value="Login">
-                        <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+                        <p>Don't have an account? <a href="#" id="showSignup">Sign Up</a></p>
                     </form>
-                    <form id="signup-form" class="hidden">
+                    <form id="signupForm" class="hidden">
                         <h2>Sign Up</h2>
-                        <label for="signup-username">Username:</label>
-                        <input type="text" id="signup-username" name="username" required>
-                        <label for="signup-password">Password:</label>
-                        <input type="password" id="signup-password" name="password" required>
-                        <label for="signup-email">Email:</label>
-                        <input type="email" id="signup-email" name="email" required>
+                        <label for="signupUsername">Username:</label>
+                        <input type="text" id="signupUsername" name="username" required>
+                        <label for="signupPassword">Password:</label>
+                        <input type="password" id="signupPassword" name="password" required>
+                        <label for="signupEmail">Email:</label>
+                        <input type="email" id="signupEmail" name="email" required>
                         <input type="submit" value="Sign Up">
-                        <input type="checkbox" name="" id=""> <label for="">I agree to the <a href="termsCondition.html">Terms and Condition</a></label>
-                        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                        <input type="checkbox" id="termsCheckbox"> 
+                        <label for="termsCheckbox">I agree to the <a href="helpTC.html">Terms and Conditions</a></label>
+                        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
                     </form>
                 </div>
             </div>
@@ -116,6 +118,7 @@
         </div>
         <div class=""></div>
     </footer>
-    <script src="userPage.js"></script>
+
+    <script src="Userpage.js"></script>
 </body>
 </html>

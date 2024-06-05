@@ -1,80 +1,100 @@
 body {
-  min-height: 100vh;
-  background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-
-.User {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.user {
+    flex-grow: 1;
+    background-image: url('./mainResources/Loginbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 80vh;
+    padding: 100px;
 }
 
 .userContainer {
-  max-width: 600px;
-  height: 600px;
-  padding-top: 150px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 290px;
 }
 
 .userWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .userCard {
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  max-width: 300px;
-  position: relative;
-  overflow: hidden;
-  transition: height 0.3s ease;
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s ease, box-shadow 0.5s ease;
+    overflow: hidden;
 }
 
 .userCard h2 {
-  margin-top: 0;
+    margin-top: 0;
+    font-size: 24px;
+    color: #1c398d;
 }
 
-.userCard input[type="text"], 
-.userCard input[type="password"], 
-.userCard input[type="email"], 
+.userCard input[type="text"],
+.userCard input[type="password"],
+.userCard input[type="email"],
 .userCard input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .userCard input[type="submit"] {
-  background-color: #1c398d;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 20px;
+    background-color: #1c398d;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .userCard input[type="submit"]:hover {
-  background-color: #1c398d;
+    background-color: #0f255a;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
-#form-container {
-  transition: height 0.3s ease;
+#formContainer {
+    transition: height 0.5s ease;
 }
 
-#form-container.signup .userCard {
-  height: 380px; 
+#formContainer.signup .userCard {
+    height: 400px;
 }
 
-#form-container .userCard {
-  height: 320px; 
+#formContainer .userCard {
+    height: 320px;
+}
+
+.userCard a {
+    color: #6a1b9a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.userCard a:hover {
+    text-decoration: underline;
 }

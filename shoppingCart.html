@@ -11,87 +11,87 @@
     <header class="header">
         <div class="headerContainer">
             <div class="headerWrapper">
-                <div class="headerLogo">
+                <div class="headerLogo">    
                     <a href="Homepage.html"><img src="./mainResources/Logo1.png" alt="MainHome"></a>
                 </div>
                 <div class="headerList">
                     <ul>
-                        <li><a href="">Deals</a></li>
-                        <li><a href="">Best Sellers</a></li>
-                        <li><a href="">New Arrivals</a></li>
-                        <li><a href="">Category</a></li>
+                        <li><a href="mainShopping.html">Deals</a></li>
+                        <li><a href="#" id="bestSellersLink">Best Sellers</a></li>
+                        <li><a href="mainShopping.html">New Arrivals</a></li>
+                        <li class="categoryMenu">
+                            <a href="">Category</a>
+                            <div class="categoryDropDown">
+                                <div class="dropContainer">
+                                    <div class="dropWrapper">
+                                        <ul>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Sandals</a></li>
+                                            <li><a href="">Slippers</a></li>
+                                            <li><a href="">Boots</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="headerUser" style="filter:  invert(1);">
+                <div class="headerUser">
                     <ul>
-                        <li><a href=""><img src="./subImages/search.png" alt=""></a></li>
+                        <li><input type="search" name="" id="searchBar" placeholder="Looking for something?"></li>
                         <li><a href="Userpage.html"><img src="./subImages/user.png" alt=""></a></li>
-                        <li><a href=""><img src="./subImages/shopping-cart.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="categoryDropDown" style="display: none;">
-            <div class="dropContainer">
-                <div class="dropWrapper">
-                    <ul>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
+                        <li><a href="shoppingCart.html"><img src="./subImages/shopping-cart.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
-    <section class="cart">
-        <form action="">
+    <div class="cart">
         <div class="cartContainer">
             <div class="cartWrapper">
-                <div class="cartFloating">
-                    <h4>Cart is empty!</h4>
-                    <p></p>
-                </div>
-                <div class="cartCard">     
-                    <div class="cardImage">
-                        <input type="checkbox" name="" id="">
-                        <img src="./productImages/Boy shoes/BatketBallShoes1.jpeg" alt="">
-                        <h4>Shush</h4>
-                    </div>
-                        <label for="size">Size:</label>
-                        <select id="size" name="size">
-                            <option value="6">6</option>
-                            <option value="6.5">6.5</option>
-                            <option value="7">7</option>
-                            <option value="7.5">7.5</option>
-                            <option value="8">8</option>
-                            <option value="8.5">8.5</option>
-                            <option value="9">9</option>
-                            <option value="9.5">9.5</option>
-                            <option value="10">10</option>
-                            <option value="10.5">10.5</option>
-                            <option value="11">11</option>
-                            <option value="11.5">11.5</option>
-                            <option value="12">12</option>
-                        </select>
-                        <div class="itemQuantity">
-                            Quantity: 
-                            <button class="minusButton">-</button>
-                            <input type="text" id="quantityInput" value="1" readonly />
-                            <button class="plusButton">+</button>
+                <div class="leftSection">
+                    <div class="cartHeader">
+                        <h2>Cart</h2>
+                        <div class="freeShipping">
+                            <span>Buy 3 save &#8369;100 on shopping</span>
                         </div>
-                        <button type="button">Remove from Cart</button>
+                    </div>
+                    <div class="cartEmptyMessage">
+                        <p>Don't leave your cart hanging! It's time to treat yourself to some top-notch gear.</p>
+                        <button class="btn" onclick="document.location.href='mainShopping.html'">Continue Shopping</button>
+                    </div>
+                </div>
+                <div class="rightSection">
+                    <div class="cartSummary">
+                        <h3>Cart Summary</h3>
+                        <div class="summaryDetails">
+                            <div class="summaryItem">
+                                <span>Subtotal</span>
+                                <span>&#8369;0.00</span>
+                            </div>
+                            <div class="summaryItem">
+                                <span>Taxes</span>
+                                <span>&#8369;0.00</span>
+                            </div>
+                            <div class="summaryItem">
+                                <span>Shipping</span>
+                                <span>Shipping and Taxes are calculated at checkout</span>
+                            </div>
+                            <div class="summaryItem total">
+                                <span>Total</span>
+                                <span>&#8369;0.00</span>
+                            </div>
+                        </div>
+                        <button class="btn checkoutBtn" disabled>Checkout</button>
+                        <div class="additionalInfo">
+                            <span>Easy 7 Day Return</span>
+                            <span>14 Day Replacement</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cartFooter">
-            <p id="subTotal">Sub-Total: &#8369;0.00</p> 
-            <input type="button" name="" id="" value="Checkout" onclick="document.location.href='purchasePage.html'">
-        </div>
-        </form>
-    </section>
+    </div>
     <footer class="footer">
         <div class="footerContainer">
             <div class="footerItems">
@@ -128,26 +128,5 @@
         </div>
         <div class=""></div>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const minusButton = document.querySelector('.minusButton');
-            const plusButton = document.querySelector('.plusButton');
-            const quantityInput = document.getElementById('quantityInput');
-
-            minusButton.addEventListener('click', (event) => {
-                event.preventDefault();
-                let quantity = parseInt(quantityInput.value);
-                if (quantity > 1) {
-                    quantityInput.value = quantity - 1;
-                }
-            });
-
-            plusButton.addEventListener('click', (event) => {
-                event.preventDefault();
-                let quantity = parseInt(quantityInput.value);
-                quantityInput.value = quantity + 1;
-            });
-        });
-    </script>
 </body>
 </html>

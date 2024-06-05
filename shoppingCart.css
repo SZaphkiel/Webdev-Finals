@@ -1,64 +1,92 @@
-.cart img{
-    width: 100px;
-    height: 100px;
-}
-.cartContainer{
-    max-height: fit-content;
-    height: 100vh;
-    padding: 50px;
-}
-.cartWrapper{
+.cart {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    max-height: 100vh;
 }
-.cartCard{
+
+.cartContainer {
     display: flex;
-    flex-direction: row;
-    width: 700px;
-    padding: 10px;
-    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px
+}
+
+.cartWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f8f8f8;
     border-radius: 10px;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.cartImage{
+
+.leftSection {
+    flex: 1;
+    padding: 20px;
+}
+
+.cartHeader {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
-.cardText{
-    display: flex;
-    flex-direction: row;
+
+.freeShipping {
+    color: #1c398d;
 }
-.cartWrapper .cartFloating{
-    position: absolute;
-    top: 400px;
+
+.cartEmptyMessage {
+    text-align: left;
 }
-.itemQuantity {
-    display: flex;
-    align-items: center;
+
+.cartEmptyMessage p {
+    margin-bottom: 20px;
 }
-.itemQuantity button {
-    width: 30px;
-    height: 30px;
-}
-.itemQuantity input {
-    width: 40px;
-    text-align: center;
-}
-.cartFooter{
-    color: #fff;
+
+.btn {
+    padding: 10px 20px;
     background-color: #1c398d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rightSection {
+    flex: 1;
+    padding: 20px;
+}
+
+.cartSummary {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summaryDetails {
+    margin-bottom: 20px;
+}
+
+.summaryItem {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 50px;
-    position: sticky;
-    bottom: 0;
-    z-index: 3000px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.summaryItem.total {
+    font-weight: bold;
+    color: #1c398d;
+}
+
+.checkoutBtn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.additionalInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
 }
