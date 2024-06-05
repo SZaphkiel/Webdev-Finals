@@ -136,6 +136,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// scroll smooth
+document.getElementById('bestSellersLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('bestSellers').scrollIntoView({ behavior: 'smooth' });
+});
+// header searchBar
+
 
 
 

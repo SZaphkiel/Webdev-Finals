@@ -11,34 +11,36 @@
     <header class="header">
         <div class="headerContainer">
             <div class="headerWrapper">
-                <div class="headerLogo">
+                <div class="headerLogo">    
                     <a href=""><img src="./mainResources/Logo1.png" alt="MainHome"></a>
                 </div>
                 <div class="headerList">
                     <ul>
                         <li><a href="mainShopping.html">Deals</a></li>
-                        <li><a href="mainShopping.html">Best Sellers</a></li>
+                        <li><a href="#" id="bestSellersLink">Best Sellers</a></li>
                         <li><a href="mainShopping.html">New Arrivals</a></li>
-                        <li><a href="">Category</a></li>
+                        <li class="categoryMenu">
+                            <a href="">Category</a>
+                            <div class="categoryDropDown">
+                                <div class="dropContainer">
+                                    <div class="dropWrapper">
+                                        <ul>
+                                            <li><a href="">Shoes</a></li>
+                                            <li><a href="">Sandals</a></li>
+                                            <li><a href="">Slippers</a></li>
+                                            <li><a href="">Boots</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="headerUser" style="filter:  invert(1);">
+                <div class="headerUser">
                     <ul>
-                        <li><a href=""><img src="./subImages/search.png" alt=""></a></li>
+                        <li><input type="search" name="" id="searchBar" placeholder="Looking for something?"></li>
                         <li><a href="Userpage.html"><img src="./subImages/user.png" alt=""></a></li>
                         <li><a href="shoppingCart.html"><img src="./subImages/shopping-cart.png" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="categoryDropDown">
-            <div class="dropContainer">
-                <div class="dropWrapper">
-                    <ul>
-                        <li><a href="">Shoes</a></li>
-                        <li><a href="">Sandals</a></li>
-                        <li><a href="">Slippers</a></li>
-                        <li><a href="">Boots</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,22 +61,22 @@
               </div>          
         </div>
     </div>    
-    <div class="bestSeller">
+    <div class="bestSeller" id="bestSellers">
         <div class="bestContainer">
             <div class="bestCards">
                 <div class="bestTexts">
                     <h2>Best Sellers</h2>
                     <a href="mainShopping.html" class="seeAll">See All</a>
                 </div>
-                    <div class="cardsContainer">
-                        <div class="sellerCards">
-                            <div class="sellerImage">
-                                <img src="./productImages/Women Shoes/Anime Shoes.jpeg" alt="productimage">
-                                <div class="sellerButton">
-                                    <input type="button" name="" id="" value="Add to Cart">
-                                </div>
+                <div class="cardsContainer">
+                    <div class="sellerCards">
+                        <div class="sellerImage">
+                            <img src="./productImages/Women Shoes/Anime Shoes.jpeg" alt="productImage">
+                            <div class="sellerButton">
+                                <input type="button" value="Add to Cart">
                             </div>
                         </div>
+                    </div>
                         <div class="sellerCards">
                             <div class="sellerImage">
                                 <img src="./productImages/Women Shoes/Floral.jpeg" alt="productimage">
@@ -159,22 +161,6 @@
             </div>
         </div>
     </div>
-    <section class="gallery">
-        <div class="galleryContainer">
-            <div class="galleryWrapper">
-                <div class="galleryCard">
-                    <div class="galleryImage">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <div class="galleryText">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <div class="chatbotContainer">
         <div class="chatbotButton" id="chatbotButton">
             <img src="./subImages/chat.png" alt="Chatbot" />
