@@ -238,11 +238,11 @@ body{
 }
 .sellerCards{
     margin: 20px;
-    transition: 0.5s ease;
+    transition: transform 0.2s
+    
 }
 .sellerCards:hover{
-    transform: scale(1.05);
-    transition: 0.5s ease;
+    transform: translateY(-5px);
 }
 .sellerCards img{
     height: auto;
