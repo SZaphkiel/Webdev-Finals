@@ -1,15 +1,26 @@
-body{
-    height: 120vh;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
-.termsContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+.header-title h2 {
+    margin: 0;
 }
-.termsWrapper{
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    gap: 20px;
+.termsCondition {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.termsCondition h1, .termsCondition h2 {
+    color: #003366;
+}
+.termsCondition ul {
+    list-style: disc;
+    margin-left: 2rem;
+}
+

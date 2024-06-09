@@ -1,29 +1,19 @@
-const productButtons = document.querySelectorAll('.cardBtn');
 
-const buttonArray = [];
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.cardBtn');
 
-for (let i = 0; i < productButtons.length; i++) {
-    buttonArray.push(productButtons[i]);
-}
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                const image = this.getAttribute('data-image');
+                const name = this.getAttribute('data-name');
+                const price = this.getAttribute('data-price');
 
-buttonArray.forEach((button, index) => {
-    button.addEventListener('click', (event) => {
-        event.preventDefault(); 
-        handleButtonClick(index); 
-        document.location.href = 'productPage.html'; 
+                const url = new URL('productPage.html', window.location.origin);
+                url.searchParams.append('mainImage1', image);
+                url.searchParams.append('productName', name);
+                url.searchParams.append('productPrice', price);
+
+                window.location.href = url.toString();
+            });
+        });
     });
-});
-
-const productName = document.getElementById('productName');
-
-function handleButtonClick(index) {
-    console.log("Button clicked:", index);
-    switch (index) {
-        case 0:
-            productName.innerHTML += "Bagong shoes"
-            break;
-        case 1:
-            // Add functionality for button 2
-            break;
-    }
-}

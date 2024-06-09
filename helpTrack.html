@@ -7,6 +7,61 @@
     <link rel="stylesheet" href="repeatablePatters.css">
 </head>
 <body>
+    <style>body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.header-title h2 {
+    margin: 0;
+}
+
+.trackOrder {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trackOrder h2 {
+    color: #003366;
+}
+
+.trackOrder p {
+    margin-bottom: 1rem;
+}
+
+.trackOrder form {
+    display: flex;
+    flex-direction: column;
+}
+
+.trackOrder label {
+    margin-bottom: 0.5rem;
+}
+
+.trackOrder input[type="text"],
+.trackOrder input[type="email"],
+.trackOrder button {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.trackOrder button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.trackOrder button:hover {
+    background-color: #001f4d;
+}
+</style>
     <header class="header">
         <div class="header-helpContainer">
             <div class="header-helpWrapper">
@@ -21,6 +76,22 @@
             </div>
         </div>
     </header>
+    <div class="trackOrder">
+        <div class="orderContainer">
+            <div class="orderWrapper">
+                <h2>Track Your Order</h2>
+                <p>To track the status of your order, please enter your order number and email address below:</p>
+                <form action="/track_order" method="post">
+                    <label for="orderNumber">Order Number:</label>
+                    <input type="text" id="orderNumber" name="orderNumber" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Track Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
     <footer class="footer">
         <div class="footerHelp">
             <div class="footerItems">

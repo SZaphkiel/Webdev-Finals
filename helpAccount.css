@@ -5,17 +5,17 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
-.policy {
+.account {
     max-width: 900px;
     margin: 2rem auto;
     background: #fff;
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.policy h1, .policy h2 {
+.account h1, .account h2 {
     color: #003366;
 }
-.policy ul {
+.account ul {
     list-style: disc;
     margin-left: 2rem;
 }
