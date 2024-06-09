@@ -1,10 +1,162 @@
+
+/* Image sizing */
+.productImage img {
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+}
+/* Wrapper for the product */
+.productWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+}
+/* Individual product card styling */
+.productCard {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 900px;
+}
+/* Information section styling */
+.productInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        width: 400px;
+        border-top: 1px solid #ddd;
+        padding: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+}
+.productInfo h4 {
+        margin: 0;
+        padding-bottom: 10px;
+        font-weight: 600;
+}
+.productInfo p {
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 1.2em;
+        color: #333;
+}
+.productInfo button {
+        background-color: #1c398d;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+}
+.productInfo button:hover {
+        background-color: #142860;
+}
+.productSelections {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+}
+.productSelections input {
+        border: 1px solid black;
+        border-radius: 40px;
+        width: 60px;
+        height: 30px;
+        text-align: center;
+}
+.productSelections select {
+        border: 1px solid black;
+        border-radius: 40px;
+        width: 60px;
+        height: 30px;
+        text-align: center;
+}
+/* Description section styling */
+.productDescription {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+}
+.productDescription p {
+        margin: 0;
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+}
+/* Reviews section styling */
+.productReviews {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+}
+.reviewContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+}
+.reviewWrapper {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.reviewWrapper p {
+        margin: 0;
+        font-size: 1em;
+        color: #555;
+        line-height: 1.4;
+}
+.reviewWrapper .reviewAuthor {
+        font-weight: bold;
+        margin-bottom: 10px;
+}
+.reviewWrapper .reviewRating {
+        color: #ffcc00;
+}
+.star-rating {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+}
+.star-rating span {
+        margin-left: 10px;
+        font-size: 0.9em;
+        color: #888;
+}
+.star-rating .stars {
+        display: flex;
+        align-items: center;
+}
+.star-rating .stars span {
+    color: #ffcc00;
+}
 /* Image sizing */
 .productImage img {
     width: 500px;
     height: 500px;
     border-radius: 10px;
 }
-
 /* Wrapper for the product */
 .productWrapper {
     display: flex;
@@ -17,7 +169,6 @@
     padding: 20px;
     margin-bottom: 20px;
 }
-
 /* Individual product card styling */
 .productCard {
     display: flex;
@@ -26,34 +177,31 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width:900px;
+    max-width: 900px;
 }
-
 /* Information section styling */
 .productInfo {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #fff;
-    width: 400px    ;
+    width: 400px;
     border-top: 1px solid #ddd;
     padding: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .productInfo h4 {
     margin: 0;
     padding-bottom: 10px;
+    font-weight: 600;
 }
-
 .productInfo p {
     margin: 0;
     padding-bottom: 20px;
     font-size: 1.2em;
     color: #333;
 }
-
 .productInfo button {
     background-color: #1c398d;
     color: white;
@@ -63,11 +211,31 @@
     cursor: pointer;
     font-size: 1em;
 }
-
 .productInfo button:hover {
-    background-color: #1c398d;
+    background-color: #142860;
 }
-
+.productSelections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.productSelections input {
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+.productSelections select {
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
 /* Description section styling */
 .productDescription {
     background-color: #fff;
@@ -78,10 +246,259 @@
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .productDescription p {
     margin: 0;
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
+}
+/* Reviews section styling */
+.productReviews {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.reviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reviewWrapper {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.reviewWrapper p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+}
+.reviewWrapper .reviewAuthor {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.reviewWrapper .reviewRating {
+    color: #ffcc00;
+}
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.star-rating span {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+.star-rating .stars {
+    display: flex;
+    align-items: center;
+}
+.star-rating .stars span {
+    color: #ffcc00;
+}
+/* Image sizing */
+.productImage img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+/* Wrapper for the product */
+.productWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* Individual product card styling */
+.productCard {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+}
+/* Information section styling */
+.productInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 400px;
+    border-top: 1px solid #ddd;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.productInfo h4 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.productInfo p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+.productInfo button {
+    background-color: #1c398d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+.productInfo button:hover {
+    background-color: #142860;
+}
+.productSelections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.productSelections input {
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+.productSelections select {
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+/* Description section styling */
+.productDescription {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.productDescription p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+/* Reviews section styling */
+.productReviews {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.reviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reviewWrapper {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.reviewWrapper p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.4;
+}
+.reviewWrapper .reviewAuthor {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.reviewWrapper .reviewRating {
+    color: #ffcc00;
+}
+.star-rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.star-rating span {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+.star-rating .stars {
+    display: flex;
+    align-items: center;
+}
+.star-rating .stars span {
+    color: #ffcc00;
+}
+/* Star rating component styling */
+.starRatingComponent {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.starRatingComponent .starsRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.starRatingComponent .starsRow .stars {
+    display: flex;
+    align-items: center;
+}
+
+.starRatingComponent .starsRow .stars span {
+    color: blue;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.starRatingComponent .bar {
+    flex-grow: 1;
+    background-color: #eee;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.starRatingComponent .barFill {
+    background-color: black;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.starRatingComponent .count {
+    width: 30px;
+    text-align: right;
 }

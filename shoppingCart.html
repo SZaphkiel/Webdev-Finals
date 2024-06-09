@@ -6,6 +6,7 @@
     <title>Cart</title>
     <link rel="stylesheet" href="repeatablePatters.css">
     <link rel="stylesheet" href="shoppingCart.css">
+    <script src="shoppingCart.js"></script>
 </head>
 <body>
     <header class="header">
@@ -56,6 +57,9 @@
                             <span>Buy 3 save &#8369;100 on shipping</span>
                         </div>
                     </div>
+                    <div class="cartItem">
+
+                    </div>
                     <div class="cartEmptyMessage">
                         <p>Your Cart is Empty!</p>
                         <button class="btn" onclick="document.location.href='mainShopping.html'">Continue Shopping</button>
@@ -67,11 +71,11 @@
                         <div class="summaryDetails">
                             <div class="summaryItem">
                                 <span>Subtotal</span>
-                                <span>&#8369;0.00</span>
+                                <span>&#8369;<span id="subtotal">0.00</span></span>
                             </div>
                             <div class="summaryItem">
                                 <span>Taxes</span>
-                                <span>&#8369;0.00</span>
+                                <span>&#8369;<span id="taxes">0.00</span></span>
                             </div>
                             <div class="summaryItem">
                                 <span>Shipping</span>
@@ -79,7 +83,7 @@
                             </div>
                             <div class="summaryItem total">
                                 <span>Total</span>
-                                <span>&#8369;0.00</span>
+                                <span>&#8369;<span id="total">0.00</span></span>
                             </div>
                         </div>
                         <button class="btn checkoutBtn" onclick="document.location.href='purchasePage.html'">Checkout</button>

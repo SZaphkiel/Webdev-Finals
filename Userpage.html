@@ -6,6 +6,11 @@
     <title>Login and Sign Up Form</title>
     <link rel="stylesheet" href="./repeatablePatters.css">
     <link rel="stylesheet" href="./Userpage.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -65,6 +70,8 @@
                         <input type="text" id="signupUsername" name="username" required>
                         <label for="signupPassword">Password:</label>
                         <input type="password" id="signupPassword" name="password" required>
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
                         <label for="signupEmail">Email:</label>
                         <input type="email" id="signupEmail" name="email" required>
                         <input type="submit" value="Sign Up">
@@ -72,6 +79,10 @@
                         <label for="termsCheckbox">I agree to the <a href="helpTC.html">Terms and Conditions</a></label>
                         <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
                     </form>
+                    <div id="welcomeMessage" class="hidden">
+                        <h2>Welcome, <span id="userDisplay"></span>!</h2>
+                        <button id="logoutButton">Logout</button>
+                    </div>
                 </div>
             </div>
         </div>
