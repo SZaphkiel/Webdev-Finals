@@ -1,0 +1,87 @@
+/* Image sizing */
+.productImage img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/* Wrapper for the product */
+.productWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Individual product card styling */
+.productCard {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width:900px;
+}
+
+/* Information section styling */
+.productInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 400px    ;
+    border-top: 1px solid #ddd;
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.productInfo h4 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.productInfo p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.productInfo button {
+    background-color: #1c398d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.productInfo button:hover {
+    background-color: #1c398d;
+}
+
+/* Description section styling */
+.productDescription {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.productDescription p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}

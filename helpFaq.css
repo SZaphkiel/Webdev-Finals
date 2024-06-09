@@ -7,25 +7,42 @@
 }
 
 .qWrapper h2 {
-    padding: 40px 0 0 0;
+    padding: 40px 0;
     font-weight: 400;
+    font-size: 2em;
+    color: #333;
 }
 
 .qCards {
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     width: 800px;
-    padding: 20px;
-    background-color: #e3e3e3;
-    border: 1px solid #000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.qCards:hover {
+    background-color: #f9f9f9;
+}
+
+.qTitle {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #444;
 }
 
 .qNa {
     display: none;
+    padding: 0 20px 20px 20px;
+    font-size: 1em;
+    color: #555;
 }
 
 .qArrow {
@@ -33,6 +50,10 @@
     transform-origin: center;
     position: absolute;
     right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    color: #888;
 }
 
 .qArrow.rotated {
