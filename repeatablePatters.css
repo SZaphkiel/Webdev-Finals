@@ -241,6 +241,31 @@ a:hover {
 .headerUser ul li a img{
     filter: invert(1);
 }
+
+.searchSuggestions {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    display: none; 
+}
+
+.searchSuggestionItem {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.searchSuggestionItem img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.searchSuggestionItem:hover {
+    background: #f0f0f0;
+}
+
 /* Footer */
 .footerHelp{
     height: 100px;

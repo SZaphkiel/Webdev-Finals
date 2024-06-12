@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Retrieve and set product details from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const mainImage1 = urlParams.get('mainImage1');
     const productName = urlParams.get('productName');
@@ -32,3 +31,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
