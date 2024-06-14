@@ -99,3 +99,9 @@ body {
 .userCard a:hover {
     text-decoration: underline;
 }
+#logoutButton{
+    background-color: #1c398d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
