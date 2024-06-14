@@ -69,6 +69,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .shoeCard:hover {
@@ -97,7 +98,16 @@ body {
 .shoePrice {
     font-size: 1em;
     color: #888;
+    margin-bottom: 10px;
+}
+
+.rating {
     margin-bottom: 20px;
+}
+
+.rating span {
+    font-size: 1em;
+    color: #888;
 }
 
 .cardBtn {
@@ -107,6 +117,8 @@ body {
     border: none;
     border-radius: 20px;
     background-color: #1c398d;
+    position: absolute;
+    bottom: 20px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
