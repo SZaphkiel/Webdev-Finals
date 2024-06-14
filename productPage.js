@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Retrieve and set product details from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const mainImage1 = urlParams.get('mainImage1');
     const productName = urlParams.get('productName');
@@ -12,10 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('productName').textContent = productName;
     }
     if (productPrice) {
-        document.getElementById('productPrice').innerHTML = `&#8369;${productPrice}`;
+        document.getElementById('productPrice').innerHTML = "&#8369;" + productPrice;
     }
 
-    // Add to cart functionality
     const addToCartButton = document.getElementById('addToCartBtn');
     addToCartButton.addEventListener('click', function() {
         const productCard = addToCartButton.closest('.productCard');
@@ -25,7 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const productPrice = parseFloat(productCard.querySelector('#productPrice').textContent.replace(/[^\d.]/g, ''));
 
         if (productQuantity > 0) {
-            const url = `shoppingCart.html?productName=${productName}&productSize=${productSize}&productQuantity=${productQuantity}&productPrice=${productPrice}`;
+            var url = 'shoppingCart.html?productName=' + productName + 
+                      '&productSize=' + productSize + 
+                      '&productQuantity=' + productQuantity + 
+                      '&productPrice=' + productPrice;
             window.location.href = url;
         } else {
             alert('Please enter a valid quantity.');
